@@ -318,4 +318,9 @@ public class AssertionMethods extends SelectElementByType implements BaseTest
 		else if ((actualValue.equals(option))&&(!shouldBeSelected))
 			throw new TestCaseFailed("Option Selected From Dropwdown");
 	}
+
+	public void isEqual(boolean expected, boolean actual, String message) throws TestCaseFailed{
+		if(expected != actual)
+			throw new TestCaseFailed(message);
+	}
 }
