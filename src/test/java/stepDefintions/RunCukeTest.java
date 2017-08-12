@@ -7,9 +7,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin = {"html:target/cucumberHtmlReport"},
-		//pretty:target/cucumber-json-report.json
-		features = "classpath:features"
+        plugin = {"html:target/cucumberHtmlReport"},
+        //pretty:target/cucumber-json-report.json
+        features = "classpath:features",
+        tags = "@Debug"
 )
 
 public class RunCukeTest {

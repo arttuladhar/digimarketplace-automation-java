@@ -12,7 +12,7 @@ import methods.TestCaseFailed;
 public class Login implements BaseTest {
 
     @Given("^I'm not a registered user$")
-    public void user_config(String link) {
+    public void user_config() {
 
     }
 
